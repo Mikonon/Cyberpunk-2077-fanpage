@@ -4,6 +4,10 @@
     scroll-behavior: smooth;
 }
 
+body{    
+    overflow-x: hidden
+}
+
 #imageHeaderBig{
     width: 100%;
 }
@@ -14,21 +18,15 @@
 
 #headerMenu
 {
-    text-align: right;
     background-color: #FCEE0A;    
     padding-top: 5px;
-    padding-right: 40px; 
+    padding-right: 50px; 
     padding-bottom: 5px;
     padding-left: 10px;  
-    font-family: "Bebas Neue", sans-serif;
-    font-size: 25px;
-    color: black;
-    text-decoration: none;
 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
 }
 
 #headerNightCity{
@@ -46,12 +44,18 @@ body{
 }
 
 #intro{
-    margin: 100px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    padding: 0px 50px;
 
     font-family: "Roboto Mono", sans-serif;
     font-size: 30px;
     font-weight: 300;
     color:#FCEE0A;
+}
+
+#intro img{
+    width: 75%;
 }
 
 #footer{        
@@ -70,6 +74,32 @@ body{
 .text-menu{
     padding-left: 0.5rem;
     padding-right: 0.5rem;
+
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 25px;
+    color: black;
+    text-decoration: none;
+}
+
+.text-menu:hover{
+    color: black;
+    text-decoration: underline;
+}
+
+.text-menu-drop{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 25px;
+    color: black;
+}
+
+.text-menu-drop:hover{
+    background-color: #00f0ff;
+}
+
+.dropdown-color{
+    background-color: #FCEE0A;
+    border: none;
+    padding-left: 10px;
 }
 
 .title-main{
@@ -84,6 +114,7 @@ body{
 .title{      
     margin-right: 40px;
     margin-left: 40px;
+    margin-bottom: 25px;
     
     font-family: "Bebas Neue", sans-serif;
     font-size: 100px;
@@ -126,7 +157,7 @@ body{
 }
 
 .text-form{   
-    margin-left: 40px;
+    margin: 20px 40px;
     
     font-family: "Roboto Mono", sans-serif;
     font-weight: 400;
@@ -135,6 +166,8 @@ body{
 }
 
 .text-form-button{   
+    margin: 20px 40px;
+
     font-family: "Bebas Neue", sans-serif;
     font-size: 30px;
     color: white;
@@ -146,7 +179,6 @@ body{
 input, textarea{
     background-color: #000012;
     border:2px solid #F75049;
-    margin-left: 40px;
     margin-top: 30px;
     margin-bottom: 30px;
     padding: 10px;
@@ -154,12 +186,12 @@ input, textarea{
 
 input{
     height: 60px;
-    width: 300px;    
+    width: 75%;    
 }
 
 textarea{
     height: 270px;
-    width: 640px;
+    width: 75%;
 }
 
 header li{
@@ -171,10 +203,16 @@ header li{
 iframe{
     border:2px solid #F75049;
     padding: 10px;
-    margin-left: 40px;
-    margin-top: 25px;
+}
 
-    display: inline;
+#videos iframe{
+    width: 100%;
+    height: 315px;
+}
+
+#music iframe{
+    width: 100%;
+    height: 465px;
 }
 
 a{
@@ -233,48 +271,18 @@ a{
     margin-right: 25px;
 }
 
-.img-right-home{
-    display: flex;
-    flex-direction: row-reverse;    
-    margin: 100px 0px;
+.img-home img{
+    width: 90%;
+    align-self: flex-end;
 
-    align-items: center;
+    border:2px solid #00f0ff;
+    padding: 10px;
 }
 
-.img-right-home img{
-    height: 500px;
-}
-
-.img-left-home{
-    display: flex;
-    flex-direction: row;
-    margin: 100px 0px;
-
-    align-items: center;
-}
-
-.img-left-home img{
-    height: 500px;
-}
-
-.img-right{
-    display: flex;
-    flex-direction: row-reverse;    
-    margin: 50px 0px;
-
-    align-items: last baseline;
-
-    gap: 25px;
-}
-
-.img-left{
-    display: flex;
-    flex-direction: row;
-    margin: 50px 0px;
-
-    align-items: last baseline;
-
-    gap: 25px;
+.cities img{
+    width: 100%;
+    margin-bottom: 30px;
+    align-self: flex-end;
 }
 
 .section-main{
@@ -289,8 +297,8 @@ a{
 }
 
 #media img{
-    height: 600px;
-    margin-right: 100px;
+    width: 100%;
+    align-self: flex-end;
 }
 
 .media-img{
@@ -298,33 +306,15 @@ a{
     border:2px solid #F75049;
     padding: 10px;
     margin-left: 40px;
-    margin-top: 25px;
-}
-
-.lifepaths{ 
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-    justify-content: center;
-    gap: 100px;
-
-    margin-left: 100px;
-    margin-right: 100px;
 }
 
 .lifepaths img{
-    width: 500px;
-
-    margin-top: 50px;   
-    margin-bottom: 50px;
+    width: 100%;
+    margin: 50px 0;
 }
 
 .lifepaths img:hover{
     filter: drop-shadow(0 0 0.75rem #00f0ff);
-}
-
-.lifepaths div{
-    width: 500px;
 }
 
 .gangs-content{
@@ -361,20 +351,9 @@ a{
 
 .gangs img{
     width: 90%;
-    margin-left: 40px;
     margin-bottom: 40px;
     border: 2px solid #F75049;
     padding: 15px;
-}
-
-.form-column{
-    display: flex;
-    flex-flow: column;
-}
-
-.form-row{
-    display: flex;
-    flex-flow: row;
 }
 
 .border-up{
@@ -390,4 +369,124 @@ a{
 
 .border-up h3{
     padding-top: 100px;
+}
+
+#carouselScreens{
+    width: 90%;
+    margin: auto;
+
+    border:2px solid #F75049;
+    padding: 10px;
+}
+
+#navbarNav{
+    text-align: right;
+}
+
+@media(max-width:576px){
+
+    .title-main{
+        font-size: 100px;
+    }    
+
+    .title{      
+        font-size: 50px;
+    }
+
+    .text-big, .text-form, #intro, .text-big-home{
+        font-size: 16px;
+    }
+
+    .text-link{
+        font-size: 30px;
+        display: block;
+    }
+
+    .title-main, .title, .text-big{
+        text-align: center;
+    }
+
+    .guion li p, .guion li:not(:first-child):not(:last-child)::after{  
+        content: "";
+        margin: 0;
+    }
+
+    #imageHeader{
+        height: 50px;
+        align-self: flex-start;
+    }
+
+    .text-menu, .text-menu-drop{
+        font-size: 20px;
+    }
+
+    #headerMenu{
+    padding-right: 20px;
+    }
+
+}
+
+@media(min-width:577px) and (max-width:768px){
+
+    .title-main{
+        font-size: 165px;
+    }    
+
+    .title{      
+        font-size: 75px;
+    }
+
+    .text-big, .text-form{
+        font-size: 20px;
+    }
+
+    .text-link{
+        font-size: 37px;
+        display: block;
+    }
+
+    .title-main, .title, .text-big{
+        text-align: center;
+    }
+
+    .guion li p, .guion li:not(:first-child):not(:last-child)::after{  
+        content: "";
+        margin: 0;
+    }
+
+    #imageHeader{
+        height: 75px;
+    }
+
+    .text-menu, .text-menu-drop{
+        font-size: 20px;
+    }
+
+    #headerMenu{
+        padding-right: 20px;
+    }
+
+    #intro, .text-big-home{
+        font-size: 25px;
+    }
+}
+
+@media(max-width:1024px){
+
+    .title-main,.title,.text-big{
+        text-align: center;
+    }
+    
+    #media img, #videos iframe, #music iframe{        
+        width: 90%;
+    }
+
+    .text-link{
+        display: block;
+    }
+
+    .guion li p, .guion li:not(:first-child):not(:last-child)::after{  
+        content: "";
+        margin: 0;
+    }
 }

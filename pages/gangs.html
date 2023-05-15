@@ -8,32 +8,52 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="../css/style.css">        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <link rel="stylesheet" href="../css/style.css">    
         <title>The Gangs</title>
     </head>
     <body>
-        <header id="headerMenu">
-            <img src="../images/logo.png" id="imageHeader" alt="">
-            <nav>
-                <ul>                                
-                    <li><a href="../index.html" class="text-menu">Home</a></li>
-                    <li><a href="../pages/night-city.html" class="text-menu">Night City</a></li>
-                    <li><a href="../pages/lifepaths.html" class="text-menu">Lifepaths</a></li>
-                    <li><a href="../pages/gangs.html" class="text-menu">Gangs</a></li>
-                    <li><a href="../pages/characters.html" class="text-menu">Characters</a></li>
-                    <li><a href="../pages/media.html" class="text-menu">Media</a></li>
-                </ul>
+        <header id="headerMenu">               
+            <a href="../index.html"><img src="../images/logo.png" id="imageHeader" alt=""></a>        
+            <nav class="navbar navbar-expand-lg">
+              <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a href="../index.html" class="text-menu">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="../pages/night-city.html" class="text-menu">Night City</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="../pages/lifepath.html" class="text-menu">Lifepaths</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="../pages/gangs.html" class="text-menu">Gangs</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="../pages/media.html" class="text-menu">Media</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </nav>
         </header>
-
         <main>
-            <section class="section-main">
-                <h1 class="title-main">beware of the gangs</h1>
-                <p class="text-big">By day, the street is the province of corporate movers and commuting beavers. But at night, the predators slither out from under their rocks and trash heaps, and the city howls. Call them gutterats, night crawlers, trash or streetscum; the gangs are the ultimate rulers of the city's night. Whether it's a small pack of a dozen, or an army of two hundred, each gang in Night City is as diverse as the street itself; guardians, chromers, dorphers and freaks, all thrown together in a lethal cocktail, mixed and sprinkled liberally with blood.</p>
-            </section>
+            <div class="section-main container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="title-main">beware of the gangs</h1>
+                        <p class="text-big">By day, the street is the province of corporate movers and commuting beavers. But at night, the predators slither out from under their rocks and trash heaps, and the city howls. Call them gutterats, night crawlers, trash or streetscum; the gangs are the ultimate rulers of the city's night. Whether it's a small pack of a dozen, or an army of two hundred, each gang in Night City is as diverse as the street itself; guardians, chromers, dorphers and freaks, all thrown together in a lethal cocktail, mixed and sprinkled liberally with blood.</p>
+                    </div>
+                </div>
+            </div>
             <section class="gangs-content">
-                <nav>
-                    <ul>                                
+                <nav class="collapse navbar-collapse">
+                    <ul class="list-unstyled">                                
                         <li><a href="#maelstrom" class="text-gangs-menu">Maelstrom</a></li>
                         <li><a href="#theMox" class="text-gangs-menu">The Mox</a></li>
                         <li><a href="#tygerClaws" class="text-gangs-menu">Tyger Claws</a></li>
@@ -43,56 +63,90 @@
                         <li><a href="#animals" class="text-gangs-menu">Animals</a></li>
                     </ul>
                 </nav>
-                <div class="gangs">
-                    <div id="maelstrom">
-                        <h2 class="title">MAELSTROM</h2>
-                        <img src="../images/Maelstrom.png" alt="">
+            </section>
+            <div class="gangs-content container-fluid">
+                <div class="row gangs">
+                    <div class="col-lg-12">
+                        <h2 id="maelstrom" class="title">MAELSTROM</h2>
+                        <div class="center">
+                            <img src="../images/Maelstrom.png" alt="">
+                        </div>
                         <p class="text">A gang that controls the districts of Watson and the Northside Industrial District (NID). You can easily recognize them by their intimidating faceplates and hostile optic implants, which not only indicates their gang affiliation but also their fetishization of cyberware and cybermodification.</p>
                         <p class="text">Looking at Maelstrom, you might think, "Now those are some hella bold pioneers of transhumanism." If they were only testing the limits of the human body on themselves, then you'd be right... Sadly, they also like to conduct "experiments" on those unfortunate enough to cross their path. Maelstrom is known for their exceptionally brutal and public gang executions – combine that with illegal braindance production and a manic fighting style and you've got yourself a gang with a reputation as a band of lunatics on the verge of cyberpsychosis. The truth is there's nothing crazy about how Maelstrom operates – at the end of the day it's all about biz. And the more rumors there are about them, the better.</p>
                     </div>
-                    <div id="theMox" class="border-up">
-                        <h2 class="title">THE MOX</h2>
-                        <img src="../images/TheMox.png" alt="">
-                        <p class="text">The youngest established gang in Night City. Its beginnings date back to 2067 when the murder of a sex worker sparked riots that lasted days. The gang formed out of the protesters attracted many others to its ranks for years after.</p>
-                        <p class="text">Mox is a motley crew of current and former sex workers, punks, freaks and all kinds of outcasts. The gang's main headquarters is Lizzie's Bar, a braindance club that serves as the Mox's main source of income. The gang's aesthetic is characterized by aggressive kitsch, loud colors, plastic and latex.</p>
-                    </div>
-                    <div id="tygerClaws" class="border-up">
-                        <h2 class="title">TYGER CLAWS</h2>
-                        <img src="../images/TygerClaws.png" alt="">
-                        <p class="text">Night City is a melting pot of cultures and ethnicities, though when it comes to its Asian demographic, the Chinese and Japanese influence is unmistakable – as are the Tyger Claws.
-                        <p class="text">As a gang, the Tyger Claws are well-organized, efficient and savvy – but also unpredictable. Their business decisions are purely rational, but when it comes to their enemies or a disloyal gang member, their methods can be shocking. They mainly operate out of Japantown, Little China, Kabuki and Charter Hill. Their main source of income are nightclubs, casinos, and braindance bars. Night Citizens love to have a good time – no other gang knows how to capitalize on that better than the Tygers.</p>
-                    </div>
-                    <div id="voodooBoys" class="border-up">
-                        <h2 class="title">VOODOO BOYS</h2>
-                        <img src="../images/VoodooBoys.png" alt="">
-                        <p class="text">A mysterious gang of netrunners based in Pacifica. The Voodoo Boys uphold the district's independence and act as the leaders of the area's predominantly Haitian community. Ominous rumors circulate about the gang – those who know the most about them are netrunners from Night City (at the very least they can recognize a Voodoo Boys virus when it hits their system) and NetWatch agents, who for years have been trying to eliminate them – unsuccessfully, of course.</p>
-                    </div>
-                    <div id="valentinos" class="border-up">
-                        <h2 class="title">VALENTINOS</h2>
-                        <img src="../images/Valentinos.png" alt="">
-                        <p class="text">Loud vests, flashy gold cyberware, heavy jewellery, tattoos of Santa Muerte and Jesus Malaverde – you'd have a hard time mistaking a Valentino when you saw one. Inspired by Chicano culture, their expressive style makes them seem like something straight out of a Mexican barrio. But if you look closer, you'll see anyone can join the gang, no matter their background or ethnicity.
-                        <p class="text">The Valentinos are strictly territorial, operating in Heywood. They're tied to the local community by nearly familial bonds of friendship – and by biz. The Valentinos run completely legal businesses like restaurants, nightclubs and auto shops, but all are fronts for their other, dirtier biz of money laundering, smuggling stolen vehicles or guns, human trafficking and gang warfare. Their friendship is priceless – and it will follow you to the grave. So you might want to think twice before riding with them.</p>
-                    </div>
-                    <div id="6thStreet" class="border-up">
-                        <h2 class="title">6TH STREET</h2>
-                        <img src="../images/6thStreet.png" alt="">
-                        <p class="text">After the 4th Corporate War, a large number of career soldiers were left without jobs or prospects - the most enterprising of them formed the 6th Street Gang. Not only do they boast veterans among their ranks, but also ex-police officers, former corporate security agents and "civilians" who have had a crash course in combat training - everyone and anyone who wants to bring order to this town.</p>
-                        <p class="text">The end justifies the means, and the means usually involve robberies, extortion, arms dealing and stealing cars. Their main turf is in Arroyo, but 6th Street's garages and bases of operation can also be found in other parts of the city.</p>
-                    </div>
-                    <div id="animals" class="border-up">
-                        <h2 class="title">ANIMALS</h2>
-                        <img src="../images/Animals.png" alt="">
-                        <p class="text">Unlike other Night City gangs, the Animals don't have a defined territory. You can find them almost anywhere, but... you know, it's not like people go out looking for them. The Animals aren't a centralized gang – they're divided into smaller groups led by independent "alphas" males or females.
-                        <p class="text">The concrete jungle – for the Animals, it's not just a pretentious metaphor. From their hormone-pumping, beast-inducing implants to their love of street combat, the Animals are obsessed with the wild side of human nature. Their physical strength and proficiency in various martial arts (and their sheer size alone) make Animals the ideal security guards and bouncers for clubs and bars. Besides that, the Animals are known for their illegal brawls, hijacking transports and their addiction to Juice, their very own homemade hormone cocktail.</p>
-                    </div>
                 </div>
-            </section>
+            </div>
+            <div class="row gangs">
+                <div class="col-lg-12 border-up">
+                    <h2 id="theMox" class="title">THE MOX</h2>
+                    <div class="center">
+                        <img src="../images/TheMox.png" alt="">
+                    </div>
+                    <p class="text">The youngest established gang in Night City. Its beginnings date back to 2067 when the murder of a sex worker sparked riots that lasted days. The gang formed out of the protesters attracted many others to its ranks for years after.</p>
+                    <p class="text">Mox is a motley crew of current and former sex workers, punks, freaks and all kinds of outcasts. The gang's main headquarters is Lizzie's Bar, a braindance club that serves as the Mox's main source of income. The gang's aesthetic is characterized by aggressive kitsch, loud colors, plastic and latex.</p>
+                </div>
+            </div>
+            <div class="row gangs">
+                <div class="col-lg-12 border-up">
+                    <h2 id="tygerClaws" class="title">TYGER CLAWS</h2>
+                    <div class="center">
+                        <img src="../images/TygerClaws.png" alt="">
+                    </div>                
+                    <p class="text">Night City is a melting pot of cultures and ethnicities, though when it comes to its Asian demographic, the Chinese and Japanese influence is unmistakable – as are the Tyger Claws.
+                    <p class="text">As a gang, the Tyger Claws are well-organized, efficient and savvy – but also unpredictable. Their business decisions are purely rational, but when it comes to their enemies or a disloyal gang member, their methods can be shocking. They mainly operate out of Japantown, Little China, Kabuki and Charter Hill. Their main source of income are nightclubs, casinos, and braindance bars. Night Citizens love to have a good time – no other gang knows how to capitalize on that better than the Tygers.</p>
+                </div>
+            </div>
+            <div class="row gangs">
+                <div class="col-lg-12 border-up">
+                    <h2 id="voodooBoys" class="title">VOODOO BOYS</h2>
+                    <div class="center">
+                        <img src="../images/VoodooBoys.png" alt="">
+                    </div>                    
+                    <p class="text">A mysterious gang of netrunners based in Pacifica. The Voodoo Boys uphold the district's independence and act as the leaders of the area's predominantly Haitian community. Ominous rumors circulate about the gang – those who know the most about them are netrunners from Night City (at the very least they can recognize a Voodoo Boys virus when it hits their system) and NetWatch agents, who for years have been trying to eliminate them – unsuccessfully, of course.</p>
+                </div>
+            </div>
+            <div class="row gangs">
+                <div class="col-lg-12 border-up">
+                    <h2 id="valentinos" class="title">VALENTINOS</h2>
+                    <div class="center">
+                        <img src="../images/Valentinos.png" alt="">
+                    </div>                
+                    <p class="text">Loud vests, flashy gold cyberware, heavy jewellery, tattoos of Santa Muerte and Jesus Malaverde – you'd have a hard time mistaking a Valentino when you saw one. Inspired by Chicano culture, their expressive style makes them seem like something straight out of a Mexican barrio. But if you look closer, you'll see anyone can join the gang, no matter their background or ethnicity.
+                    <p class="text">The Valentinos are strictly territorial, operating in Heywood. They're tied to the local community by nearly familial bonds of friendship – and by biz. The Valentinos run completely legal businesses like restaurants, nightclubs and auto shops, but all are fronts for their other, dirtier biz of money laundering, smuggling stolen vehicles or guns, human trafficking and gang warfare. Their friendship is priceless – and it will follow you to the grave. So you might want to think twice before riding with them.</p>
+                </div>
+            </div>
+            <div class="row gangs">
+                <div class="col-lg-12 border-up">
+                    <h2 id="6thStreet" class="title">6TH STREET</h2>
+                    <div class="center">
+                        <img src="../images/6thStreet.png" alt="">
+                    </div>                    
+                    <p class="text">After the 4th Corporate War, a large number of career soldiers were left without jobs or prospects - the most enterprising of them formed the 6th Street Gang. Not only do they boast veterans among their ranks, but also ex-police officers, former corporate security agents and "civilians" who have had a crash course in combat training - everyone and anyone who wants to bring order to this town.</p>
+                    <p class="text">The end justifies the means, and the means usually involve robberies, extortion, arms dealing and stealing cars. Their main turf is in Arroyo, but 6th Street's garages and bases of operation can also be found in other parts of the city.</p>
+                </div>
+            </div>
+            <div class="row gangs">
+                <div class="col-lg-12 border-up">
+                    <h2 id="animals" class="title">ANIMALS</h2>
+                    <div class="center">
+                        <img src="../images/Animals.png" alt="">
+                    </div>                    
+                    <p class="text">Unlike other Night City gangs, the Animals don't have a defined territory. You can find them almost anywhere, but... you know, it's not like people go out looking for them. The Animals aren't a centralized gang – they're divided into smaller groups led by independent "alphas" males or females.
+                    <p class="text">The concrete jungle – for the Animals, it's not just a pretentious metaphor. From their hormone-pumping, beast-inducing implants to their love of street combat, the Animals are obsessed with the wild side of human nature. Their physical strength and proficiency in various martial arts (and their sheer size alone) make Animals the ideal security guards and bouncers for clubs and bars. Besides that, the Animals are known for their illegal brawls, hijacking transports and their addiction to Juice, their very own homemade hormone cocktail.</p>
+                </div>
+            </div>
         </main>
 
         <footer id="footer">
-            <p>© 2023 Yanina Lucero. Cyberpunk 2077 fanpage for personal project.</p>
-            <br>
-            <a href="#headerMenu"><b><u>Let's go up!</b></b></a>
-        </footer>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <p>© 2023 Yanina Lucero. Cyberpunk 2077 fanpage for personal project.</p>
+                        <a href="#headerMenu"><b><u>Let's go up!</b></b></a>
+                    </div>
+                </div>
+            </div>
+          </footer>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     </body>
 </html>
