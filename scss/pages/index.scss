@@ -1,0 +1,99 @@
+#imageHeaderBig{
+    width: 100%;
+}
+
+#intro{
+    margin-top: 50px;
+    margin-bottom: 100px;
+    padding: 0px 50px;
+
+    font-family: "Roboto Mono", sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    color:$color-yellow;
+
+    img{
+        width: 75%;
+    }
+
+    @include mediaquery-mobile(){
+        font-size: 16px;
+    }
+    @include mediaquery-mobile-large(){
+        font-size: 25px;
+    } 
+}
+
+.text-big-home{
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-bottom: 50px;
+    
+    font-family: "Roboto Mono", sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    color: $color-red;  
+
+    @include mediaquery-mobile(){
+        font-size: 16px;
+    }
+    @include mediaquery-mobile-large(){
+        font-size: 25px;
+    } 
+}
+
+.img-home img{
+    width: 90%;
+    align-self: flex-end;
+
+    border:2px solid $color-cyan;
+    padding: 10px;
+
+    clip-path: polygon(100% 0, 100% 80%, 80% 100%, 0 100%, 0 0);
+    /*box-shadow: 12px 14px 0 4px $color-yellow;*/
+}
+
+.text-form{   
+    margin: 20px 40px;
+    
+    font-family: "Roboto Mono", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+    
+    @include mediaquery-mobile(){
+        font-size: 16px;
+    }
+    @include mediaquery-mobile-large(){
+        font-size: 20px;
+    }
+}
+
+.text-form-button{   
+    margin: 20px 40px;
+
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 30px;
+    color: white;
+    
+    background-color: $color-red;
+    display: block;
+}
+
+input, textarea{
+    background-color: $color-bk;
+    border:2px solid $color-red;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 10px;
+}
+
+input{
+    height: 60px;
+    width: 75%;    
+}
+
+textarea{
+    height: 270px;
+    width: 75%;
+}

@@ -1,0 +1,12 @@
+@each $pos in "top", "bottom"{
+    @each $key, $value in $colors{
+        .border-#{$pos}-#{$key}{
+            border-#{$pos}: 2px solid $value;
+            margin-#{$pos}: 50px;
+
+            @if $pos == "top"{
+                padding-top: 25px;
+            }
+        }
+    }
+}

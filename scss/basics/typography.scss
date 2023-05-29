@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap');
+
+h1, h2, h3{
+    margin-right: 40px;
+    margin-left: 40px;
+    
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 250px;
+    color: white;
+
+    @include mediaquery-mobile(){
+        font-size: 100px;
+        text-align: center;
+    }  
+    @include mediaquery-mobile-large(){
+        font-size: 165px;
+        text-align: center;
+    }  
+    @include mediaquery-tablet(){
+        text-align: center;
+    } 
+}
+
+.title{      
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-bottom: 25px;
+    
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 100px;
+    color: $color-red;
+
+    @include mediaquery-mobile(){
+        font-size: 50px;
+        text-align: center;
+    }  
+    @include mediaquery-mobile-large(){
+        font-size: 75px;
+        text-align: center;
+    }      
+    @include mediaquery-tablet(){
+        text-align: center;
+    }
+}
+
+.text-big{
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-bottom: 50px;
+    
+    font-family: "Roboto Mono", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    color: white;
+
+    @include mediaquery-mobile(){
+        font-size: 16px;
+        text-align: center;
+    }
+    @include mediaquery-mobile-large(){
+        font-size: 20px;
+        text-align: center;
+    }
+    @include mediaquery-tablet(){
+        text-align: center;
+    }   
+}
+
+.text{
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-bottom: 25px;
+    
+    font-family: "Roboto Mono", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: $color-red;
+    
+    line-height: 1.75;
+}

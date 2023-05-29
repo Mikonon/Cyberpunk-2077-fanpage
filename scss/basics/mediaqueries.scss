@@ -1,0 +1,17 @@
+@mixin mediaquery-mobile(){
+    @media (max-width:576px){
+        @content;
+    }
+}
+
+@mixin mediaquery-mobile-large(){
+    @media (min-width:577px) and (max-width:768px){
+        @content;
+    }
+}
+
+@mixin mediaquery-tablet(){
+    @media (max-width:1023px){
+        @content;
+    }
+}

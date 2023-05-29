@@ -9,12 +9,15 @@
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-        <link rel="stylesheet" href="./css/style.css">    
+        <link rel="stylesheet" href="node_modules/aos/dist/aos.css"/>
+        <link rel="stylesheet" href="./css/app.css">
+        <meta name="description" content="Fanpage dedicated to Cyberpunk 2077 — a storydriven, open world RPG of the dark future from CD PROJEKT RED. You will find about the city, lifepaths, the gangs and promotional media.">    
+        <meta name="keywords" content="Cyberpunk 2077, CD PROJEKT RED, cyberpunk, videogame, open world RPG">
         <title>Welcome to the Cyberpunk 2077 fanpage</title>
     </head>
     <body>
         <header id="headerMenu">               
-            <a href="./index.html"><img src="./images/logo.png" id="imageHeader" alt=""></a>        
+            <a href="./index.html"><img src="./images/logo.png" id="imageHeader"></a>        
             <nav class="navbar navbar-expand-lg">
               <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,32 +44,34 @@
                 </div>
               </div>
             </nav>            
-          </header>            
+        </header>            
         <main>          
-            <img src="./images/header.jpg" id="imageHeaderBig" alt="">
-            <div id="intro" class="container-fluid center">
+            <img src="./images/header.jpg" id="imageHeaderBig">
+            <div id="intro" class="container-fluid center" data-aos="fade-down" data-aos-duration="1000">
                 <div class="row">
                     <div class="col-12">
-                        <img src="./images/logo.png" alt="">
+                        <img src="./images/logo.png">
                         <p>Cyberpunk 2077 is a 2020 action role-playing videogame developed by CD Projekt Red and published by CD Projekt. Set in Night City, an open world set in the Cyberpunk universe, players assume the role of a customisable mercenary known as V, who can acquire skills in hacking and machinery with options for melee and ranged combat. The main story follows V's struggle as they deal with a mysterious cybernetic implant that threatens to overwrite their body with the personality and memories of a deceased celebrity only perceived by V; the two must work together to be separated and save V's life.</p>
                     </div>
                 </div>
             </div>            
             <div class="container-fluid img-home"> 
-                <div class="row mb-5">
+                <div class="row mb-5" data-aos="fade-right" data-aos-duration="1000">
                     <div class="col-lg-12 col-xl-6 mb-5 center">
-                        <img src="./images/screen1.jpg" alt="">
+                        <img src="./images/news1.jpg">
                     </div>     
                     <div class="col-lg-12 col-xl-6">
-                        <p class="text-big-home">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus architecto rerum veniam? Veniam, expedita asperiores architecto vero deleniti iusto neque itaque id culpa reiciendis, officia saepe! Expedita voluptas quo eaque?</p>
+                        <h2 class="title">EDGERUNNERS</h2>
+                        <p class="text-big-home">By the hand of NETFLIX and Studio TRIGGER, meet David a talented but reckless streetkid who strives to become a mercenary outlaw – an edgerunner in a dystopia riddled with corruption and cybernetic implants.</p>
                     </div>  
                 </div>
-                <div class="row">
+                <div class="row" data-aos="fade-left" data-aos-duration="1000">
                     <div class="col-lg-12 col-xl-6 order-xl-2 mb-5 center">
-                        <img src="./images/screen2.jpg" alt="">
+                        <img src="./images/news2.jpeg">
                     </div>     
                     <div class="col-lg-12 col-xl-6 order-xl-1">
-                        <p class="text-big-home">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus architecto rerum veniam? Veniam, expedita asperiores architecto vero deleniti iusto neque itaque id culpa reiciendis, officia saepe! Expedita voluptas quo eaque?</p>
+                        <h2 class="title">PHANTOM LIBERTY</h2>
+                        <p class="text-big-home">Introducing Idris Elba as Solomon Reed, an FIA agent for the new United States of America. Team up and take on an impossible mission of espionage & survival!</p>
                     </div> 
                 </div>
             </div>
@@ -74,7 +79,7 @@
             <div class="container-fluid border-up">
                 <div class="row">
                     <div class="col-12">
-                        <h2 class="title-main">CONTACT US</h2>
+                        <h2 class="spacing">CONTACT US</h2>
                         <p class="text-big">Any suggestions? We would love to hear what else we can add to our fanpage!</p>
                     </div>
                     <div class="col-12">
@@ -87,7 +92,7 @@
                     </div>
                     <div class="col-12">
                         <p class="text-form">Let us know your comments here:</p>
-                        <textarea name="" id="" class="text-form"></textarea>             
+                        <textarea class="text-form"></textarea>             
                         <input type="submit" value="Submit" class="text-form-button">
                     </div>
                 </div>
@@ -104,5 +109,9 @@
             </div>
           </footer>
           <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+          <script src="node_modules/aos/dist/aos.js"></script>
+          <script>
+            AOS.init();
+          </script>
     </body>
 </html>
