@@ -71,6 +71,7 @@ h1, h2, h3 {
   font-weight: 400;
   font-size: 30px;
   color: white;
+  word-spacing: -5px;
 }
 @media (max-width: 576px) {
   .text-big {
@@ -99,6 +100,7 @@ h1, h2, h3 {
   font-size: 16px;
   color: #F75049;
   line-height: 1.75;
+  word-spacing: -2px;
 }
 
 #headerMenu {
@@ -230,6 +232,7 @@ a {
   font-family: "Roboto Mono", sans-serif;
   font-weight: 400;
   color: black;
+  word-spacing: -2px;
 }
 
 .border-top-yellow {
@@ -310,6 +313,7 @@ a {
   font-size: 30px;
   font-weight: 300;
   color: #FCEE0A;
+  word-spacing: -5px;
 }
 #intro img {
   width: 75%;
@@ -333,6 +337,7 @@ a {
   font-weight: 300;
   font-size: 30px;
   color: #F75049;
+  word-spacing: -5px;
 }
 @media (max-width: 576px) {
   .text-big-home {
@@ -345,6 +350,9 @@ a {
   }
 }
 
+.img-home {
+  overflow: hidden;
+}
 .img-home img {
   width: 90%;
   align-self: flex-end;
@@ -360,6 +368,7 @@ a {
   font-weight: 400;
   font-size: 20px;
   color: white;
+  word-spacing: -2px;
 }
 @media (max-width: 576px) {
   .text-form {
@@ -467,10 +476,25 @@ textarea {
   }
 }
 
+.cities {
+  overflow: hidden;
+}
+.cities div {
+  padding: 0;
+}
 .cities img {
   width: 100%;
   margin-bottom: 30px;
   align-self: flex-end;
+}
+
+#headerLifepaths {
+  padding-top: 50px;
+  padding-bottom: 60px;
+  background-image: url(../images/lifepaths.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .lifepaths img {
@@ -479,6 +503,15 @@ textarea {
 }
 .lifepaths img:hover {
   filter: drop-shadow(0 0 0.75rem #00f0ff);
+}
+
+#headerGangs {
+  padding-top: 50px;
+  padding-bottom: 60px;
+  background-image: url(../images/gangs.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .gangs-content {

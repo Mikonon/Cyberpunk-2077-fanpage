@@ -53,6 +53,7 @@ h1, h2, h3{
     font-weight: 400;
     font-size: 30px;
     color: white;
+    word-spacing: -5px;
 
     @include mediaquery-mobile(){
         font-size: 16px;
@@ -78,4 +79,5 @@ h1, h2, h3{
     color: $color-red;
     
     line-height: 1.75;
+    word-spacing: -2px;
 }
