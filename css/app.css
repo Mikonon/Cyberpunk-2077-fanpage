@@ -878,18 +878,21 @@ textarea {
 @media (max-width: 576px) {
   #music img {
     margin-top: 10px;
+    margin-left: 0;
     width: 80%;
   }
 }
 @media (min-width: 577px) and (max-width: 767px) {
   #music img {
     margin-top: 10px;
+    margin-left: 0;
     width: 80%;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   #music img {
     margin-top: 10px;
+    margin-left: 0;
     width: 80%;
   }
 }
