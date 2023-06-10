@@ -16,36 +16,35 @@
         <title>Visit Night City</title>
     </head>
     <body>
-        <header id="headerMenu">               
-            <a href="../index.html"><img src="../images/logo.png" id="imageHeader"></a>        
+        <header id="headerMenu">                   
             <nav class="navbar navbar-expand-lg">
-              <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                  <ul class="navbar-nav">
-                    <li class="nav-item">
-                      <a href="../index.html" class="text-menu">Home</a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="../pages/night-city.html" class="text-menu">Night City</a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="../pages/lifepath.html" class="text-menu">Lifepaths</a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="../pages/gangs.html" class="text-menu">Gangs</a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="../pages/media.html" class="text-menu">Media</a>
-                    </li>
-                  </ul>
+                <div class="container-fluid">
+                    <a href="../index.html" class="navbar-brand"><img src="../images/logo.png" id="imageHeader"></a>    
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                            <a href="../index.html" class="text-menu">Home</a>
+                            </li>
+                            <li class="nav-item">
+                            <a href="../pages/night-city.html" class="text-menu">Night City</a>
+                            </li>
+                            <li class="nav-item">
+                            <a href="../pages/lifepath.html" class="text-menu">Lifepaths</a>
+                            </li>
+                            <li class="nav-item">
+                            <a href="../pages/gangs.html" class="text-menu">Gangs</a>
+                            </li>
+                            <li class="nav-item">
+                            <a href="../pages/media.html" class="text-menu">Media</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-              </div>
             </nav>
         </header>
-
         <main>
             <div class="container-fluid">
                 <div id="headerNightCity" class="row border-bottom-wh">
@@ -55,13 +54,15 @@
                         <nav class="center">
                             <ul class="text-link">
                                 <li><p>Districts & Locations:</p></li>
-                                <li><a href="#cityCenter" class="text-link">City Center</a></li>
-                                <li><a href="#heywood" class="text-link">Heywood</a></li>
-                                <li><a href="#pacifica" class="text-link">Pacifica</a></li>
-                                <li><a href="#santoDomingo" class="text-link">Santo Domingo</a></li>
-                                <li><a href="#watson" class="text-link">Watson</a></li>
-                                <li><a href="#westbrook" class="text-link">Westbrook</a></li>
-                                <li><a href="#theBadlands" class="text-link">The Badlands</a></li>
+                                <div class="cities-list">
+                                    <li><a href="#cityCenter" class="text-link">City Center</a></li>
+                                    <li><a href="#heywood" class="text-link">Heywood</a></li>
+                                    <li><a href="#pacifica" class="text-link">Pacifica</a></li>
+                                    <li><a href="#santoDomingo" class="text-link">Santo Domingo</a></li>
+                                    <li><a href="#watson" class="text-link">Watson</a></li>
+                                    <li><a href="#westbrook" class="text-link">Westbrook</a></li>
+                                    <li><a href="#theBadlands" class="text-link">The Badlands</a></li>
+                                </div>
                             </ul>
                         </nav>
                     </div>
@@ -69,7 +70,7 @@
             </div>
             <div class="container-fluid cities">
                 <div class="row" data-aos="fade-right" data-aos-duration="1000">
-                    <div class="col-lg-12 col-xl-6 order-xl-2 d-flex justify-content-center justify-content-xl-end">
+                    <div class="city-img col-lg-12 col-xl-6 order-xl-2 d-flex justify-content-center justify-content-xl-end">
                         <img src="../images/CityCenter.png">
                     </div>     
                     <div class="col-lg-12 col-xl-6 order-xl-1">
@@ -79,7 +80,7 @@
                     </div>           
                 </div>
                 <div class="row border-top-cyan" data-aos="fade-left" data-aos-duration="1000">
-                    <div class="col-lg-12 col-xl-6 d-flex justify-content-center justify-content-xl-end">
+                    <div class="city-img col-lg-12 col-xl-6 d-flex justify-content-center justify-content-xl-end">
                         <img src="../images/Heywood.png">
                     </div>     
                     <div class="col-lg-12 col-xl-6">
@@ -89,7 +90,7 @@
                     </div>  
                 </div>
                 <div class="row border-top-cyan" data-aos="fade-right" data-aos-duration="1000">
-                    <div class="col-lg-12 col-xl-6 order-xl-2 d-flex justify-content-center justify-content-xl-end">
+                    <div class="city-img col-lg-12 col-xl-6 order-xl-2 d-flex justify-content-center justify-content-xl-end">
                         <img src="../images/Pacifica.png">
                     </div>     
                     <div class="col-lg-12 col-xl-6 order-xl-1">
@@ -100,7 +101,7 @@
                     </div> 
                 </div>
                 <div class="row border-top-cyan" data-aos="fade-left" data-aos-duration="1000">
-                    <div class="col-lg-12 col-xl-6 d-flex justify-content-center justify-content-xl-end">
+                    <div class="city-img col-lg-12 col-xl-6 d-flex justify-content-center justify-content-xl-end">
                         <img src="../images/SantoDomingo.png">
                     </div>     
                     <div class="col-lg-12 col-xl-6">
@@ -110,40 +111,30 @@
                     </div> 
                 </div>
                 <div class="row border-top-cyan" data-aos="fade-right" data-aos-duration="1000">
-                    <div class="col-lg-12 col-xl-6 order-xl-2 d-flex justify-content-center justify-content-xl-end">
-                        <img src="../images/SantoDomingo.png">
-                    </div>     
-                    <div class="col-lg-12 col-xl-6 order-xl-1">
-                        <h2 id="santoDomingo" class="title">Santo Domingo</h2>
-                        <p class="text">Santo Domingo is one of Night City's oldest districts. Luckily, its location meant it avoided the worst damage from the 4th Corporate War, though the tens of thousands of Night Citizens deprived of their homes still built provisional camps and settlements. Today, no trace of them remains - Santo Domingo has instead become an industrial hub with an abundance of enterprises and manufacturing and power plants. Corporations are in constant battle over influence in the district - real estate changes hands, new businesses pop up and old businesses fall. Meanwhile, construction sites are guarded by combat troops guarding corporate property and secrets, though often they serve as law enforcement in cases when a company shuts down and fires all its staff (mostly around Rancho Coronado), raising the risk of riots.</p>
-                        <p class="text">Sub-districts & Areas: Arroyo, Rancho Coronado.</p>
-                    </div> 
-                </div>
-                <div class="row border-top-cyan" data-aos="fade-left" data-aos-duration="1000">
-                    <div class="col-lg-12 col-xl-6 d-flex justify-content-center justify-content-xl-end">
+                    <div class="city-img col-lg-12 col-xl-6 order-xl-2 d-flex justify-content-center justify-content-xl-end">
                         <img src="../images/Watson.png">
                     </div>     
-                    <div class="col-lg-12 col-xl-6">
+                    <div class="col-lg-12 col-xl-6 order-xl-1">
                         <h2 id="watson" class="title">Watson</h2>
                         <p class="text">Watson was supposed to be the beating heart of Night City. A few decades ago, Japanese zaibatsus invested billions of eurodollars in skyscrapers, nightclubs, the Med Center, even industry in the northern area - all intended to make the district self-sufficient and prosperous. But everything changed when Arasaka returned to the city after the Unification War. The corporation steamrolled all of its competitors, and without a stable financial sector, Watson caved in on itself. Jobs in the Northside Industrial District completely evaporated, leaving people out on the street, allowing Arasaka to buy up all the now-cheap real estate. Turns out, the move was calculated: Arasaka needed port-access. Today Watson is one of Night City's poorest districts, inhabited mainly by workers in Northside earning ennies.</p>
                         <p class="text">Sub-districts & Areas: Arasaka Waterfront, Kabuki, Little China, Northside Industrial District.</p>
                     </div> 
                 </div>
-                <div class="row border-top-cyan" data-aos="fade-right" data-aos-duration="1000">
-                    <div class="col-lg-12 col-xl-6 order-xl-2 d-flex justify-content-center justify-content-xl-end">
+                <div class="row border-top-cyan" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="city-img col-lg-12 col-xl-6 d-flex justify-content-center justify-content-xl-end">
                         <img src="../images/Westbrook.png">
                     </div>     
-                    <div class="col-lg-12 col-xl-6 order-xl-1">
+                    <div class="col-lg-12 col-xl-6">
                         <h2 id="westbrook" class="title">Westbrook</h2>
                         <p class="text">A fair amount of Night Citizens firmly believe that Westbrook is the best district to live in. After all, that's where all the richest and most influential people of Night City live, including the picturesquely situated North Oak - probably the most beautiful neighborhood in the city. Charter Hill has its charm, too - home to ambitious and enterprising corpos who are about halfway up their career ladder. Last but not least, Japantown is widely known as Night City's party district. Yes indeed, Westbrook is where everyone wants to be. But it wasn't always like that. Over fifty years ago, after the nuclear attack on Arasaka in 2023, the part of Westbrook next to City Center sustained serious damage. The bomb's earthquake completely wiped out Japantown's high-rises, leaving behind ghostly, crooked skeletons looming over the district for the next two decades. Charter Hill was inundated with refugees - even North Oak saw ramshackle huts and tents hastily put up on its slopes. Luckily, by the 40s, the great restoration of Night City was already underway - the ruins of megabuildings were removed, replaced by shiny monoliths from predominantly Asian corporations, returning Japantown to its former glory. Charter Hill was also cleaned up and soon saw new homes for corpo employees. The refugee and homeless encampments in North Oak lasted for much longer, remaining a sore sight for the city's authorities. Crime levels there beat the city's records - for a time even soaring above those of the Combat Zone. Eventually the area was brought to order with the help of mercenaries, and shortly after it became the North Oak we know today - the most exclusive and secure area of Night City.</p>
                         <p class="text">Sub-districts & Areas: Charter Hill, Japantown, North Oak.</p>
                     </div> 
                 </div>
-                <div class="row border-top-cyan" data-aos="fade-left" data-aos-duration="1000">
-                    <div class="col-lg-12 col-xl-6 d-flex justify-content-center justify-content-xl-end">
+                <div class="row border-top-cyan" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="city-img col-lg-12 col-xl-6 order-xl-2 d-flex justify-content-center justify-content-xl-end">
                         <img src="../images/TheBadlands.png">
                     </div>     
-                    <div class="col-lg-12 col-xl-6">
+                    <div class="col-lg-12 col-xl-6 order-xl-1">
                         <h2 id="theBadlands" class="title">The Badlands</h2>
                         <p class="text">If you think Night City is dangerous, just wait 'till you get to the Badlands. The areas bordering the city to the east and south are actually eight different zones that vary in character and landscape. There's the trailer park of Red Peaks, the plains of Rocky Ridge, and the desert of Sierra Sonora stretching out to the east, whose landfill emits a stench that's often blown all the way into the city. Saturated with chemicals and acid rain, nothing will ever grow again in this region of the Badlands. Anyone who has to cross this area does it quickly, and if they're smart, with an armed escort in case they run into Wraiths - a gang made up of exiled nomads. You could compare them to vultures, though at least vultures have the decency to wait until their prey is dead. The south paints a much less apocalyptic picture with Biotechnica's protein farms and the Jackson Plains power plant. A trip to the neighboring lake of Laguna Bend at sunset is the most picturesque view the Badlands has to offer (just make sure you don't touch the water).</p>                 
                         <p class="text">There's a saying that everyone should visit the Badlands at least once in their lives. Sounds like something the Wraiths would say.</p>
@@ -156,22 +147,48 @@
                     </div>
                 </div>
             </div>
+            <a href="#headerMenu" class="button-go-up">⇪</a>
+            <div class="razor"></div>          
         </main>
-
-        <footer id="footer">
+        <footer id="footer">            
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-12">
+                    <div class="col-lg-12 col-xl-6">
                         <p>© 2023 Yanina Lucero. Cyberpunk 2077 fanpage for personal project.</p>
-                        <a href="#headerMenu"><b><u>Let's go up!</b></b></a>
+                        <a href="#headerMenu"><b><u>Let's go up!</u></b></a>
+                    </div>
+                    <div class="col-lg-12 col-xl-6">
+                        <ul class="social-media">
+                            <li>
+                                <a href="https://www.youtube.com/user/CyberPunkGame"><img src="../images/youtube.svg" alt="YouTube logo"></a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/CyberpunkGameES"><img src="../images/facebook.svg" alt="Facebook logo"></a>
+                            </li>   
+                            <li>
+                                <a href="https://twitter.com/cyberpunkgame"><img src="../images/twitter.svg" alt="Twitter logo"></a>
+                            </li>
+                            <li>
+                                <a href="https://discord.com/invite/cyberpunkgame"><img src="../images/discord.svg" alt="Discord logo"></a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/cyberpunkgame/"><img src="../images/instagram.svg" alt="Instagram logo"></a>
+                            </li>
+                            <li>
+                                <a href="https://cyberpunkgame.tumblr.com/"><img src="../images/tumblr.svg" alt="Tumblr logo"></a>
+                            </li>
+                            <li>
+                                <a href="https://www.twitch.tv/cdprojektred"><img src="../images/twitch.svg" alt="Twitch logo"></a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
-          </footer>
-          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-          <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-          <script>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
             AOS.init();
-          </script>
+        </script>
     </body>
 </html>

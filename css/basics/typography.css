@@ -1,12 +1,12 @@
 /* Error: Undefined mixin.
  *    ,
- * 12 | /     @include mediaquery-mobile(){
- * 13 | |         font-size: 100px;
- * 14 | |         text-align: center;
- * 15 | |     }  
+ * 10 | /     @include mediaquery-mobile(){
+ * 11 | |         font-size: 100px;
+ * 12 | |         text-align: center;
+ * 13 | |     }  
  *    | '-----^
  *    '
- *   scss\basics\typography.scss 12:5  root stylesheet */
+ *   scss\basics\typography.scss 10:5  root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -16,5 +16,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Undefined mixin.\a    \2577 \a 12 \2502  \250c      @include mediaquery-mobile(){\a 13 \2502  \2502          font-size: 100px;\a 14 \2502  \2502          text-align: center;\a 15 \2502  \2502      }  \a    \2502  \2514 \2500 \2500 \2500 \2500 \2500 ^\a    \2575 \a   scss\\basics\\typography.scss 12:5  root stylesheet";
+  content: "Error: Undefined mixin.\a    \2577 \a 10 \2502  \250c      @include mediaquery-mobile(){\a 11 \2502  \2502          font-size: 100px;\a 12 \2502  \2502          text-align: center;\a 13 \2502  \2502      }  \a    \2502  \2514 \2500 \2500 \2500 \2500 \2500 ^\a    \2575 \a   scss\\basics\\typography.scss 10:5  root stylesheet";
 }

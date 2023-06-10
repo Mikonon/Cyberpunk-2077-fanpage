@@ -1,13 +1,41 @@
-#footer{        
-    margin-top: 100px;
-    padding-left: 40px;  
-    padding-right: 40px; 
-    padding-top: 25px;
-    padding-bottom: 25px;
+#footer{            
+    padding: 25px 40px;
     background-color: $color-yellow;
-    
     font-family: "Roboto Mono", sans-serif;
     font-weight: 400;
     color: black;    
     word-spacing: -2px;
+    .social-media{
+        text-align: right;
+        padding: 0;        
+        li{            
+            padding: 0 10px;
+            list-style: none;
+            display: inline;
+            img{
+                height: 25px;
+                @include mediaquery-mobile(){
+                    margin-top: 25px;
+                }
+                @include mediaquery-mobile-large(){
+                    margin-top: 25px;
+                }
+                @include mediaquery-tablet(){
+                    margin-top: 25px;
+                }
+            }
+        }
+        @include mediaquery-mobile(){
+            margin-top: 25px;
+            text-align: center;
+        }
+        @include mediaquery-mobile-large(){
+            margin-top: 25px;
+            text-align: center;
+        }
+        @include mediaquery-tablet(){
+            margin-top: 25px;
+            text-align: center;
+        }
+    }
 }

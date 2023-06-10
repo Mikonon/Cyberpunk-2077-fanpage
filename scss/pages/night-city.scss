@@ -1,18 +1,14 @@
 #headerNightCity{
-    padding-top: 50px;
-    padding-bottom: 60px;
-
+    padding: 50px 0;
     background-image: url(../images/nightcity.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-
     .text-link{
         font-family: "Bebas Neue", sans-serif;
         font-size: 45px;
         color: white;
         text-decoration: none;
-    
         @include mediaquery-mobile(){
             font-size: 30px;
             display: block;
@@ -25,45 +21,58 @@
             display: block;
         }
     }
-    
-    li{
-        list-style: none;
-        display: inline;
-
-        p{
+    ul{
+        padding: 0;
+        margin: 0;
+        li{
+            list-style: none;
             display: inline;
-            margin-right: 25px;
-        }
-    
-        @include mediaquery-mobile(){
-            content: "";
-            margin: 0;
-        }
-        @include mediaquery-mobile-large(){
-            content: "";
-            margin: 0;
-        }
-        @include mediaquery-tablet(){
-            content: "";
-            margin: 0;
-        }
-
-        &:not(:first-child):not(:last-child)::after{  
-            content: "-";
-            margin: 0px 25px;
-            @include mediaquery-tablet(){
-                content: "";
-                margin: 0;
+            p{
+                margin: 0 25px;
+            }
+            &:not(:first-child):not(:last-child)::after{  
+                content: "-";
+                margin: 0 25px;
+                @include mediaquery-mobile(){
+                    content: "";
+                }
+                @include mediaquery-mobile-large(){
+                    content: "";
+                }
+                @include mediaquery-tablet(){
+                    content: "";
+                }
             }
         }
     }
+    @include mediaquery-mobile(){
+        margin-bottom: 0;
+    }
+    @include mediaquery-mobile-large(){
+        margin-bottom: 0;
+    }
+    @include mediaquery-tablet(){
+        margin-bottom: 0;
+    }
+}
+
+.city-img{
+    padding: 0;
 }
 
 .cities{
     overflow: hidden;
     div{
-        padding: 0;
-    }    
+        @include mediaquery-mobile(){
+            padding: 0;
+        }
+        @include mediaquery-mobile-large(){
+            padding: 0;
+        }
+        @include mediaquery-tablet(){
+            padding: 0;
+        }
+    }
     img{
         width: 100%;
         margin-bottom: 30px;

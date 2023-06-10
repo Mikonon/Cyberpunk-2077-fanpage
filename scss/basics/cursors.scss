@@ -2,8 +2,10 @@ body{
     cursor:url('../cursors/pointer.cur'), auto;
 }
 
-a{cursor:url('../cursors/anchor.cur'), auto;
+a{
+    cursor:url('../cursors/anchor.cur'), auto;
 }
 
-textarea{cursor:url('../cursors/text.cur'), auto;
+textarea,input{
+    cursor:url('../cursors/text.cur'), auto;
 }

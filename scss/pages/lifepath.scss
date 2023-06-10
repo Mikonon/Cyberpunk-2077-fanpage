@@ -1,7 +1,5 @@
 #headerLifepaths{
-    padding-top: 50px;
-    padding-bottom: 60px;
-
+    padding: 50px 0;
     background-image: url(../images/lifepaths.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -11,7 +9,6 @@
 .lifepaths img{
     width: 100%;
     margin: 50px 0;
-
     &:hover{
         filter: drop-shadow(0 0 0.75rem $color-cyan);
     }

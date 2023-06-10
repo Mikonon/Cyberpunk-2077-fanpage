@@ -25,3 +25,37 @@ a{
 .spacing{
     padding-top: 100px;
 }
+
+.razor{
+    margin-top: 200px;
+    height: 48px;
+    background-image: url(../images/razor.svg);
+    background-size: cover;
+}
+
+@mixin go-up(){
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 30px;
+    color: $color-bk;
+    text-align: center;
+    display: block;
+    height: 50px;
+    width: 50px;
+    background-color: $color-green;    
+    margin: 0 0 -225px 25px;
+    z-index: 1;
+    position: sticky;
+    bottom: 25px;
+}
+
+.button-go-up{
+    @include mediaquery-mobile(){
+        @include go-up()
+    }
+    @include mediaquery-mobile-large(){
+        @include go-up()
+    } 
+    @include mediaquery-tablet(){
+        @include go-up()
+    } 
+}

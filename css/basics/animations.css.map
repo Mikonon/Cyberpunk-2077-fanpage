@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"animations.css"}
+{"version":3,"sourceRoot":"","sources":["../../scss/basics/animations.scss"],"names":[],"mappings":"AAAA;EACI;EACA;;;AAGJ;EACI;IACE;;EAEF;IACE","file":"animations.css"}

@@ -1,0 +1,15 @@
+.cities-list {
+  transform: translateX(-100%);
+  animation: cities-list-anim 30s linear infinite;
+}
+
+@keyframes cities-list-anim {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+/*# sourceMappingURL=animations.css.map */

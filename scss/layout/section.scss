@@ -3,9 +3,8 @@
         .border-#{$pos}-#{$key}{
             border-#{$pos}: 2px solid $value;
             margin-#{$pos}: 50px;
-
             @if $pos == "top"{
-                padding-top: 25px;
+                padding-top: 50px;
             }
         }
     }

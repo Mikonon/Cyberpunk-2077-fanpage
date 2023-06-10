@@ -6,7 +6,7 @@ a {
   cursor: url("../cursors/anchor.cur"), auto;
 }
 
-textarea {
+textarea, input {
   cursor: url("../cursors/text.cur"), auto;
 }
 
