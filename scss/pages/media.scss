@@ -50,14 +50,17 @@
         -webkit-mask-box-image: url(../images/samurai.png);
         @include mediaquery-mobile(){
             margin-top: 10px;
+            margin-left: 0;
             width: 80%;
         }
         @include mediaquery-mobile-large(){
             margin-top: 10px;
+            margin-left: 0;
             width: 80%;
         } 
         @include mediaquery-tablet(){
             margin-top: 10px;
+            margin-left: 0;
             width: 80%;
         } 
     }
